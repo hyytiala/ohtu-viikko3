@@ -14,13 +14,16 @@ public class Main {
         }
 
         String url = "https://studies.cs.helsinki.fi/ohtustats/students/"+studentNr+"/submissions";
+        String infoUrl = "https://studies.cs.helsinki.fi/ohtustats/courseinfo";
 
         String bodyText = Request.Get(url).execute().returnContent().asString();
-
+        String infoBodyText = Request.Get(infoUrl).execute().returnContent().asString();
+        System.out.println(infoBodyText);
 
         Gson mapper = new Gson();
         Submission[] subs = mapper.fromJson(bodyText, Submission[].class);
-        
+        Info info = mapper.fromJson(infoBodyText, Info.class);
+                
         int totalExercises = 0;
         int totalHours = 0;
         
