@@ -28,10 +28,18 @@ public class Submission {
     public int getExercisesCount(){
         return exercises.length;
     }
+    
+    public String exercises(){
+        StringBuilder builder = new StringBuilder();
+        for (int tehtava : exercises){
+            builder.append(tehtava+" ");
+        }
+        return builder.toString();
+    }
 
     @Override
     public String toString() {
-        return "viikko "+week+ ": ";
+        return "viikko "+week+ ": tehtyja tehtavia yhteensa: "+exercises.length+", aikaa kului: "+hours+" tuntia, tehdyt tehtavat: "+exercises();
     }
     
 }
