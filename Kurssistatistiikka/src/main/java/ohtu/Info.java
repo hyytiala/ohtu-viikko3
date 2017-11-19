@@ -26,4 +26,46 @@ public class Info {
     public void setName (String name){
         this.name = name;
     }
+
+    public void setTerm(String term) {
+        this.term = term;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public void setWeek(int week) {
+        this.week = week;
+    }
+
+    public void setExercises(int[] exercises) {
+        this.exercises = exercises;
+    }
+
+    public String getId() {
+        return _id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getTerm() {
+        return term;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public int getWeek() {
+        return week;
+    }
+
+    public int[] getExercises() {
+        return exercises;
+    }
+    
+    
 }
