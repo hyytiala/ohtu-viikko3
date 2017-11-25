@@ -1,8 +1,9 @@
 
 package ohtu.lyyrakortti;
 
-import ohtu.matkakortti.Matkakortti;
+
 import ohtu.matkakortti.Kassapaate;
+import ohtu.matkakortti.Matkakortti;
 import org.junit.Before;
 import org.junit.Test;
 import static org.mockito.Matchers.anyInt;
