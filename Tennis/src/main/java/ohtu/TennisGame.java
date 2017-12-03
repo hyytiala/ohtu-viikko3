@@ -21,7 +21,6 @@ public class TennisGame {
 
     public String getScore() {
         String score = "";
-        int tempScore=0;
         if (m_score1==m_score2){
             score += tilanne(m_score1);
             if(m_score1<4){score += "-All";}
@@ -36,23 +35,6 @@ public class TennisGame {
             score +=tilanne(m_score2);
         }
         return score;
-    }
-    
-    public String tasaTilanne(){
-        switch (m_score1)
-            {
-                case 0:
-                        return "Love-All";
-                case 1:
-                        return "Fifteen-All";
-                case 2:
-                        return "Thirty-All";
-                case 3:
-                        return "Forty-All";
-                default:
-                        return "Deuce";
-                
-            }
     }
     
     public String voitto(){
