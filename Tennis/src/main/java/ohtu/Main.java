@@ -30,6 +30,7 @@ public class Main {
 
         game.wonPoint("player1");
         System.out.println(game.getScore());
+        System.out.println("Tennispeli päättyi.");
         System.out.println("Kiitos ja heihei.");
 }
 }
