@@ -14,6 +14,9 @@ public class Main {
         TennisGame game = new TennisGame("player1", "player2");
         System.out.println("Tervetuloa tannikseen");
 
+        System.out.println("Peli alkaa:");
+
+
         System.out.println(game.getScore());
 
         game.wonPoint("player1");
@@ -30,7 +33,9 @@ public class Main {
 
         game.wonPoint("player1");
         System.out.println(game.getScore());
+
         System.out.println("Tennispeli päättyi.");
         System.out.println("Kiitos ja heihei.");
+
 }
 }
